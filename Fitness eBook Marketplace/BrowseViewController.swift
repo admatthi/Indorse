@@ -243,9 +243,23 @@ class BrowseViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Posts", for: indexPath) as! PostsTableViewCell
         
-        cell.name.text = "\(authors[planids[indexPath.row]]!) is loving"
+
+
+        var normalText = " endorsed"
+        
+        var boldText  = authors[planids[indexPath.row]]!
+        
+        var attributedString = NSMutableAttributedString()
+        
+        let attrs: [NSAttributedString.Key: Any] = [.font: UIFont(name: "AvenirNext-Bold", size: 14)!]
+        var boldString = NSMutableAttributedString(string: boldText, attributes:attrs)
+        
+        attributedString.append(boldString)
+        attributedString.append(NSMutableAttributedString(string:normalText))
+        
+        cell.name.attributedText = attributedString
         cell.titlelabel.text = products[planids[indexPath.row]]
-        cell.time.text = times[planids[indexPath.row]]
+        cell.time.text = times[planids[indexPath.row]]!.replacingOccurrences(of: " ", with: "")
         cell.pic.image = images[planids[indexPath.row]]
         cell.pic.layer.cornerRadius = cell.pic.frame.height/2
         cell.pic.clipsToBounds = true
@@ -310,3 +324,4 @@ extension Date {
         return "25s"
     }
 }
+
