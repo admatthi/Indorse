@@ -10,6 +10,7 @@ import UIKit
 
 class PostsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var thumbnailpic: UIImageView!
     @IBOutlet weak var time: UILabel!
     @IBOutlet weak var titlelabel: UILabel!
     @IBOutlet weak var name: UILabel!

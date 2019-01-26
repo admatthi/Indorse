@@ -20,7 +20,7 @@ var reviews = [String:String]()
 var authors = [String:String]()
 var images = [String:UIImage]()
 var times = [String:String]()
-
+var thumbnailpics = [String:UIImage]()
 var selectedid = String()
 var selectedprice = String()
 var selecteddescription = String()
@@ -96,6 +96,7 @@ class BrowseViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 
                 
             }
+          
             
         })
     }
@@ -113,6 +114,7 @@ class BrowseViewController: UIViewController, UITableViewDelegate, UITableViewDa
         titles.removeAll()
         times.removeAll()
         planids.removeAll()
+        thumbnailpics.removeAll()
         
         ref?.child("All Posts").observeSingleEvent(of: .value, with: { (snapshot) in
             
@@ -185,7 +187,19 @@ class BrowseViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     productlinks[each] = author2
                     
                 }
-               
+                
+                if var thumbnail = value?["Thumbnail"] as? String {
+                    // Create a storage reference from the URL
+                    
+                    let url = URL(string: thumbnail)
+                    let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+                    var selectedimage = UIImage(data: data!)!
+                    
+                    thumbnailpics[each] = selectedimage
+
+                    
+                    
+                }
                 
                 if var profileUrl = value?["Image"] as? String {
                     // Create a storage reference from the URL
@@ -262,12 +276,17 @@ class BrowseViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.time.text = times[planids[indexPath.row]]!.replacingOccurrences(of: " ", with: "")
         cell.pic.image = images[planids[indexPath.row]]
         cell.pic.layer.cornerRadius = cell.pic.frame.height/2
+        cell.thumbnailpic.layer.cornerRadius = 5.0
+        cell.thumbnailpic.layer.masksToBounds = true
+        
+        cell.thumbnailpic.image = thumbnailpics[planids[indexPath.row]]
         cell.pic.clipsToBounds = true
         cell.selectionStyle = .none
         return cell
         
     }
 }
+
 
 extension UILabel {
     func addCharacterSpacing() {
