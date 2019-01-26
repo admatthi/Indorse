@@ -58,11 +58,11 @@
                   moduleName = "Fitness eBook Marketplace"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/alekmatthiessen/Downloads/Indorse/Fitness%20eBook%20Marketplace/MyPlansViewController.swift"
-                  timestampString = "569982349.105301"
+                  timestampString = "570165761.929479"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "183"
-                  endingLineNumber = "183"
+                  startingLineNumber = "187"
+                  endingLineNumber = "187"
                   offsetFromSymbolStart = "462">
                </Location>
                <Location
@@ -73,11 +73,11 @@
                   moduleName = "Fitness eBook Marketplace"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/alekmatthiessen/Downloads/Indorse/Fitness%20eBook%20Marketplace/MyPlansViewController.swift"
-                  timestampString = "569982349.10795"
+                  timestampString = "570165761.932039"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "178"
-                  endingLineNumber = "178"
+                  startingLineNumber = "182"
+                  endingLineNumber = "182"
                   offsetFromSymbolStart = "135">
                </Location>
             </Locations>

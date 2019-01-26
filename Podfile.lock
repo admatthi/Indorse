@@ -92,6 +92,7 @@ PODS:
   - nanopb/encode (0.3.901)
   - Protobuf (3.6.1)
   - Purchases (1.1.5)
+  - SwiftLinkPreview (2.3.1)
   - UXCam (3.0.4)
 
 DEPENDENCIES:
@@ -106,6 +107,7 @@ DEPENDENCIES:
   - FirebaseStorage
   - IQKeyboardManager
   - Purchases
+  - SwiftLinkPreview
   - UXCam
 
 SPEC REPOS:
@@ -132,6 +134,7 @@ SPEC REPOS:
     - nanopb
     - Protobuf
     - Purchases
+    - SwiftLinkPreview
     - UXCam
 
 SPEC CHECKSUMS:
@@ -157,8 +160,9 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
   Purchases: f2d21a0b8a644a22a6ee0f03f52e4a3f95b9d69c
+  SwiftLinkPreview: 7fa103fdbf20f1644c23289dc5ebc01425d997ab
   UXCam: 3f9918b9e83298976d835d929a3ddd149ece08d8
 
-PODFILE CHECKSUM: 166294008190353085c333c47a7020e519abf185
+PODFILE CHECKSUM: fafd204ec433c4c224244d83b1aa6e341dab1e3b
 
 COCOAPODS: 1.5.3

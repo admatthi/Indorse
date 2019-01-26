@@ -17,6 +17,7 @@ pod 'IQKeyboardManager'
 pod 'Firebase/DynamicLinks'
 pod 'UXCam'
 pod 'Purchases'
+pod 'SwiftLinkPreview'
 
   # Pods for Fitness eBook Marketplace
 

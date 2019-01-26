@@ -20,6 +20,7 @@
 		9D306BA721EFBEE4009AD6F8 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D306BA621EFBEE4009AD6F8 /* OverviewViewController.swift */; };
 		9D306BA921EFE9C7009AD6F8 /* PostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D306BA821EFE9C7009AD6F8 /* PostsTableViewCell.swift */; };
 		9D306BAB21EFEEBF009AD6F8 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D306BAA21EFEEBE009AD6F8 /* PostViewController.swift */; };
+		9D3090A621FC0751004B0491 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3090A521FC0751004B0491 /* SearchViewController.swift */; };
 		9D4B806021F935EC004DC091 /* PayPalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4B805F21F935EC004DC091 /* PayPalViewController.swift */; };
 		9D5AA54E21E928C200CF1275 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AA54D21E928C200CF1275 /* AppDelegate.swift */; };
 		9D5AA55021E928C200CF1275 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AA54F21E928C200CF1275 /* ViewController.swift */; };
@@ -75,6 +76,7 @@
 		9D306BA621EFBEE4009AD6F8 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		9D306BA821EFE9C7009AD6F8 /* PostsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewCell.swift; sourceTree = "<group>"; };
 		9D306BAA21EFEEBE009AD6F8 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		9D3090A521FC0751004B0491 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		9D4B805F21F935EC004DC091 /* PayPalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayPalViewController.swift; sourceTree = "<group>"; };
 		9D5AA54A21E928C200CF1275 /* Fitness eBook Marketplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitness eBook Marketplace.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5AA54D21E928C200CF1275 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				9D2B4F7221E95A7B00478414 /* RegisterViewController.swift */,
 				9D5AA54F21E928C200CF1275 /* ViewController.swift */,
 				9D5AA55121E928C200CF1275 /* Main.storyboard */,
+				9D3090A521FC0751004B0491 /* SearchViewController.swift */,
 				9D5AA57B21E92C9E00CF1275 /* BrowseViewController.swift */,
 				9D306BA821EFE9C7009AD6F8 /* PostsTableViewCell.swift */,
 				9D306BAA21EFEEBE009AD6F8 /* PostViewController.swift */,
@@ -391,6 +394,7 @@
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/Purchases/Purchases.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftLinkPreview/SwiftLinkPreview.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -404,6 +408,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Purchases.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftLinkPreview.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -470,6 +475,7 @@
 				9D2B4F7121E95A6900478414 /* WelcomeViewController.swift in Sources */,
 				9D306BAB21EFEEBF009AD6F8 /* PostViewController.swift in Sources */,
 				9D2B4F7321E95A7B00478414 /* RegisterViewController.swift in Sources */,
+				9D3090A621FC0751004B0491 /* SearchViewController.swift in Sources */,
 				9DCCC56421EE4A7E005E25A8 /* CreditCardViewController.swift in Sources */,
 				9D2B4F6521E9500A00478414 /* OverviewTableViewCell.swift in Sources */,
 				9D306BA921EFE9C7009AD6F8 /* PostsTableViewCell.swift in Sources */,

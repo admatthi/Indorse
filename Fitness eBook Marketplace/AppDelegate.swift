@@ -17,6 +17,7 @@ import FirebaseMessaging
 import UXCam
 import AVFoundation
 import Purchases
+import SwiftLinkPreview
 
 var didpurchase = Bool()
 var tryingtopurchase = Bool()
